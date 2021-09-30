@@ -46,5 +46,13 @@ while index < length_seq:
 
     index = index_2
 
+# Calculate percentage
+percent_1 = match.count("|") / len(seq1) * 100
+percent_2 = match.count("|") / len(seq2) * 100
+
+
 print("seq1 Consensus:", match.count("|"), "/", len(seq1))
+print("% Overlap of Seq1:", str(percent_1), "%")
+print()
 print("seq2 consensus:", match.count("|"), "/", len(seq2))
+print("% Overlap of Seq2:", str(percent_2), "%")
