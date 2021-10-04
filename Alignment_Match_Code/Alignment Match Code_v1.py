@@ -1,13 +1,29 @@
 # -*- coding: utf-8 -*-
+
 """
-Created on Tue May 12 20:52:05 2020
+#--DNA<->RNA--#
+
+import re
+
+#--Converting DNA to RNA--#
+DNA = input("DNA Seq: ")
+RNA = re.sub("T", "U", DNA)
+print("RNA Seq:", RNA)
+
+
+#--Converting RNA to DNA--#
+RNA = input("DNA Seq: ")
+DNA = re.sub("T", "U", RNA)
+print("RNA Seq:", DNA)
 """
 
+
+#--Sequence Alignment--#
 seq1 = input(str("Input Sequence 1: "))
 seq2 = input(str("Input Sequence 2: "))
 
-## Assuming two sequeces are aligned from beginning
-## Append "-" to the end of the shorter sequence
+#--Assuming two sequeces are aligned from beginning--#
+#--Append "-" to the end of the shorter sequence--#
 if len(seq1) >= len(seq2):
     x_s2 = seq2 + "-" * (len(seq1) - len(seq2))
     x_s1 = seq1
@@ -15,7 +31,7 @@ else:
     x_s1 = seq1 + "-" * (len(seq2) - len(seq1))
     x_s2 = seq2
 
-## matching the two sequences 
+#--matching the two sequences--#
 match = ""  # blank
 for i in range(len(x_s1)):
     if x_s1[i] == x_s2[i]:
@@ -23,13 +39,13 @@ for i in range(len(x_s1)):
     else:
         match = match + "X"  # fill in the blank with X
 
-## print two sequences and match        
+#--print two sequences and match--#
 print(seq1)
 print(match)
 print(seq2)
 print()
 
-####### Slice long sequence into multiple short sequences to print out
+#--Slice long sequence into multiple short sequences to print out--#
 nchar = 60
 
 length_seq = len(match)
