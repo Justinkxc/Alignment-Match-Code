@@ -1,5 +1,6 @@
 # Alignment Match Code
-This was written for practice and for my own ease of alignment and manipulation of nucleic acid sequences to facilitate primer design.
+This was written for practice and for my own ease of alignment and manipulation of nucleic acid sequences to facilitate primer design. 
+
 
 #Conversion between DNA and RNA
 Application of Regex to replace thymine/uracil nucleotides.
