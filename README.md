@@ -30,4 +30,4 @@ Example of the nucleotide contents of the TOP1 gene coding sequence
 
 For sequence alignment of 2 sequences, the count of each sequence will be returned alongside the number of matching base pairs
 
-![img_4.png](img_4.png)
+![img.png](img.png)
