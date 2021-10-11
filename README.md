@@ -22,9 +22,9 @@ A module to obtain the nucleotide count and GC content of input DNA sequences.
 
 Example of the nucleotide contents of the TOP1 gene coding sequence
 
-![img_3.png](img_3.png)
-
 ![img_2.png](img_2.png)
+
+![img_1.png](img_1.png)
 
 # DNA Sequence Alignment
 

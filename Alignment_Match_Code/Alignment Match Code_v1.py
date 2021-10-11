@@ -40,7 +40,7 @@ revseq1 = seq1[::-1]
 print("Reverse complement of seq1 = 5'", revseq1, "3'")
 """
 
-"""
+
 ####################
 #Nucleotide Content#
 ####################
@@ -76,9 +76,9 @@ z = alt.Chart(df).mark_bar().encode(
 ).show()
 z = p.properties(height = 150, width = alt.Step(80))
 print(z)
+
+
 """
-
-
 ########################
 #--Sequence Alignment--#
 ########################
@@ -136,5 +136,5 @@ print("% Overlap of Seq1:", str(percent_1), "%")
 print()
 print("seq2 consensus:", match.count("|"), "/", len(seq2))
 print("% Overlap of Seq2:", str(percent_2), "%")
-
+"""
 
