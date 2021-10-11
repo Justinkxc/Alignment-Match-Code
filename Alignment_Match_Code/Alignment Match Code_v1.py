@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
-"""
+import streamlit as st
+
 ###############
 #--DNA<->RNA--#
 ###############
@@ -10,7 +11,7 @@ import re
 DNA = input("DNA Seq: ")
 RNA = re.sub("T", "U", DNA)
 print("RNA Seq:", RNA)
-"""
+
 
 """
 ########################
