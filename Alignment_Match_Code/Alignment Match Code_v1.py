@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import streamlit as st
+
 
 ###############
 #--DNA<->RNA--#
 ###############
 import re
+import streamlit as st
+
 
 #--Converting DNA to RNA--#
 DNA = input("DNA Seq: ")
