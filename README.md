@@ -8,13 +8,13 @@ Application of Regex to replace thymine/uracil nucleotides.
 
 Can be similarly performed for conversion of RNA to DNA
 
-![img_1.png](img_1.png)
+
 
 # Obtaining the Reverse Complement of a DNA Sequence
 
 Input a DNA sequence to obtain its reverse complement presented from its 5' to 3' end
 
-![img_1.png](img_1.png)
+
 
 # Obtaining Nucleotide Content of a DNA Sequence
 

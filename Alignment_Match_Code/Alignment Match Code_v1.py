@@ -1,24 +1,15 @@
 # -*- coding: utf-8 -*-
 
-"""
+
 ###############
 #--DNA<->RNA--#
 ###############
 import re
 
-seq1 = input(str("Input Sequence 1: "))
-
 #--Converting DNA to RNA--#
 DNA = input("DNA Seq: ")
 RNA = re.sub("T", "U", DNA)
 print("RNA Seq:", RNA)
-
-
-#--Converting RNA to DNA--#
-RNA = input("DNA Seq: ")
-DNA = re.sub("T", "U", RNA)
-print("RNA Seq:", DNA)
-"""
 
 """
 ########################
@@ -40,7 +31,7 @@ revseq1 = seq1[::-1]
 print("Reverse complement of seq1 = 5'", revseq1, "3'")
 """
 
-
+"""
 ####################
 #Nucleotide Content#
 ####################
@@ -76,7 +67,7 @@ z = alt.Chart(df).mark_bar().encode(
 ).show()
 z = p.properties(height = 150, width = alt.Step(80))
 print(z)
-
+"""
 
 """
 ########################
