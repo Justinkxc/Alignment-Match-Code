@@ -1,5 +1,5 @@
 # Alignment Match Code
-A series of simple bioinformatic modules put together for working with genetic information.
+A series of bioinformatic modules put together for working with genetic information.
 
 This was written for practice and for my own ease of alignment and manipulation of nucleic acid sequences.
 
