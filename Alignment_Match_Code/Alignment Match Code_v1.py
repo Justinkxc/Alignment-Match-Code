@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 
 """
+###############
 #--DNA<->RNA--#
-
+###############
 import re
+
+seq1 = input(str("Input Sequence 1: "))
 
 #--Converting DNA to RNA--#
 DNA = input("DNA Seq: ")
@@ -17,8 +20,69 @@ DNA = re.sub("T", "U", RNA)
 print("RNA Seq:", DNA)
 """
 
+"""
+########################
+#--Reverse Complement--#
+########################
+import re
 
+seq1 = input(str("Input DNA Sequence: "))
+
+#--converting seq1 to complement--#
+seq1 = re.sub("T", "U", seq1)
+seq1 = re.sub("A", "T", seq1)
+seq1 = re.sub("U", "A", seq1)
+seq1 = re.sub("G", "X", seq1)
+seq1 = re.sub("C", "G", seq1)
+seq1 = re.sub("X", "C", seq1)
+
+revseq1 = seq1[::-1]
+print("Reverse complement of seq1 = 5'", revseq1, "3'")
+"""
+
+"""
+####################
+#Nucleotide Content#
+####################
+
+import pandas as pd
+import altair as alt
+
+seq1 = input(str("Input DNA Sequence: "))
+
+def nucleotide_count(seq1):
+    x = dict([
+        ("A", seq1.count("A")),
+        ("T", seq1.count("T")),
+        ("C", seq1.count("C")),
+        ("G", seq1.count("G"))
+        ])
+    return x
+
+y = nucleotide_count(seq1)
+
+df = pd.DataFrame.from_dict(y,orient = "index")
+df = df.rename({0: "count"}, axis = "columns")
+df.reset_index(inplace = True)
+df = df.rename(columns = {"index" : "nucleotide"})
+print(df)
+
+GC = ((seq1.count("G")) + seq1.count("C")) / len(seq1) * 100
+print("GC content: ", GC, "%")
+
+z = alt.Chart(df).mark_bar().encode(
+    x = "nucleotide",
+    y = "count"
+).show()
+z = p.properties(height = 150, width = alt.Step(80))
+print(z)
+"""
+
+"""
+########################
 #--Sequence Alignment--#
+########################
+
 seq1 = input(str("Input Sequence 1: "))
 seq2 = input(str("Input Sequence 2: "))
 
@@ -72,3 +136,5 @@ print("% Overlap of Seq1:", str(percent_1), "%")
 print()
 print("seq2 consensus:", match.count("|"), "/", len(seq2))
 print("% Overlap of Seq2:", str(percent_2), "%")
+"""
+
