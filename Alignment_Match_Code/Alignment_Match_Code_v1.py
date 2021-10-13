@@ -54,7 +54,7 @@ st.header("2. DNA Reverse Complement")
 
 import re
 
-seqx = input("")
+seqx = "ATCGTAGCATCGATCGACTAGCATCGATCGACTAGCTAGCTACGATCGATCGATATCGAGCAGCAT"
 
 #--converting seq to complement--#
 seqx = re.sub("T", "U", seqx)
