@@ -3,6 +3,11 @@ A series of bioinformatic modules put together for working with genetic informat
 
 This was written for practice and for my own ease of alignment and manipulation of nucleic acid sequences.
 
+v1 - For python
+v2 - Streamlit Deployed
+
+https://share.streamlit.io/justinkxc/alignment-match-code/main/Alignment_Match_Code/Alignment_Match_Code.py (work in progress)
+
 # Conversion between DNA and RNA
 Application of Regex to replace thymine/uracil nucleotides.
 
