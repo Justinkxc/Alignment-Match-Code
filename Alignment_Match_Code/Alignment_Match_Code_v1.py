@@ -17,7 +17,7 @@ st.write("""
 By Justinkxc
 
 1. Conversion of DNA to RNA
-2. Obtaining the reverse comeplement of a DNA sequence
+2. Obtaining the reverse complement of a DNA sequence
 3. Obtaining the nucleotide contents of a DNA sequence
 4. Alignment of 2 sequences
 
@@ -54,7 +54,7 @@ st.header("2. DNA Reverse Complement")
 
 import re
 
-seqx = "ATCGTAGCATCGATCGACTAGCATCGATCGACTAGCTAGCTACGATCGATCGATATCGAGCAGCAT"
+seqx = input("")
 
 #--converting seq to complement--#
 seqx = re.sub("T", "U", seqx)
