@@ -7,7 +7,8 @@ v1 - For python
 
 v2 - Streamlit Deployed
 
-https://share.streamlit.io/justinkxc/alignment-match-code/main/Alignment_Match_Code/Alignment_Match_Code.py (work in progress)
+[https://share.streamlit.io/justinkxc/alignment-match-code/main/Alignment_Match_Code/Alignment_Match_Code.py](https://razercutter.streamlit.app/) 
+(work in progress)
 
 # Conversion between DNA and RNA
 Application of Regex to replace thymine/uracil nucleotides.
