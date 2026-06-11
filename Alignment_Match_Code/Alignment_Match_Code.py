@@ -2,13 +2,17 @@
 
 
 import streamlit as st
+import os
 from PIL import Image
 
 ##############
 #Page Title##
 ############
 
-image = Image.open("DNA.jpg")
+BASE_DIR = os.path.dirname(__file__)
+image_path = os.path.join(BASE_DIR, "DNA.jpg")
+
+image = Image.open(image_path)
 
 st.image(image, use_column_width=True)
 
